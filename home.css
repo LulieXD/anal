@@ -8,6 +8,7 @@ body {
     min-height: 100vh;
     font-family: 'Lexend', sans-serif;
     line-height: 1.6;
+    overflow-x: hidden;
 
     background-image: url('imagens/my-melody.jpg');
     background-size: cover;
@@ -15,7 +16,12 @@ body {
     background-repeat: no-repeat;
 }
 
+/*Pego em I.A e modificado por mim*/
+section {
+    scroll-margin-top: 95px; 
+}
 
+  
 * {
     margin: 0;
     padding: 0;
@@ -147,7 +153,23 @@ body {
 
 
 
+/*1. Pego em I.A e modificado por mim */
+/*2. Todas as outras pizzas foram só ctrl c + ctrl v da pizza de camarão,
+elas são padronizadas e fazem parte da primeira observação, também*/
+/*3. Houve alguns lugares onde eu aceitei sugestões do Copilot, mas não sei
+dizer exatamente onde e quais foram, então perdão por isso*/
+
+/*Picas saugadas*/
+
 /*Pica de camarão*/
+.picãosalgaudos h1 {
+    font-size: 2.5rem;
+    font-family: 'Segoe UI', lexend;
+    color: #a83c59;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
 .camarão-img {
     width: 200px;
     height: 200px;
@@ -156,15 +178,6 @@ body {
     border: 5px solid #f87c9e;;
     box-shadow: 0 0 10px var(--accent-glow);
 }
-.caramãopica h1 {
-    font-size: 2.5rem;
-    font-family: 'Segoe UI', lexend;
-    color: #a83c59;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-/* Pego em I.A e modificado por mim */
 
 .caramão {
     display: flex;
@@ -192,7 +205,7 @@ body {
 }
 .caramão ul li {
     font-size: 18px;
-    color: #000000;
+    color: #f87c9e;
     margin-bottom: 5px;
     position: relative;
     font-family: 'Segoe UI', lexend;
@@ -203,20 +216,20 @@ body {
 }
 .caramão p {
     font-size: 18px;
-    color: #000000;
+    color: #f87c9e;
     position: relative;
     font-family: 'Segoe UI', lexend;
 }
 .caramão h3 {
     font-size: 18px;
-    color: #000000;
+    color: #f87c9e;
     position: relative;
     font-family: 'Segoe UI', lexend;
 }
 
 
 
-/*Cheddar*/
+/*Pica de cheddar*/
 .cheddar-img {
     width: 200px;
     height: 200px;
@@ -251,7 +264,7 @@ body {
 }
 .cheddar ul li {
     font-size: 18px;
-    color: #000000;
+    color: #f87c9e;
     margin-bottom: 5px;
     position: relative;
     font-family: 'Segoe UI', lexend;
@@ -262,13 +275,438 @@ body {
 }
 .cheddar p {
     font-size: 18px;
-    color: #000000;
+    color: #f87c9e;
     position: relative;
     font-family: 'Segoe UI', lexend;
 }
 .cheddar h3 {
     font-size: 18px;
-    color: #000000;
+    color: #f87c9e;
     position: relative;
     font-family: 'Segoe UI', lexend;
+}
+
+
+
+/*Pica de doritos*/
+/*Houve certas redundâncias que eu não consegui identificar onde estava se repetindo,
+mas pelo fato de querer uma solução rápida, eu simplesmente pedi para que o Copilot
+ajeitasse-as para mim, mesmo sendo uma coisa bem preguiçosa, viu?*/
+
+.dorito-img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #f87c9e;
+    box-shadow: 0 0 10px var(--accent-glow);
+}
+
+.doritos {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;     
+    gap: 20px;
+    background-color: #ffffff;
+    border: 5px solid #f87c9e;
+    border-radius: 20px;
+    box-shadow: 0 0 10px var(--accent-glow);
+    padding: 40px;
+    text-align: center;      
+    width: 100%;
+    max-width: 600px;
+    margin: 50px auto;
+}
+
+.doritos:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.doritos ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin: 10px 0;
+}
+
+.doritos ul li {
+    font-size: 18px;
+    color: #f87c9e;
+    margin-bottom: 5px;
+    position: relative;
+    font-family: 'Segoe UI', lexend;
+}
+
+.doritos ul li::before {
+    position: absolute;
+    left: -25px;
+}
+
+.doritos p {
+    font-size: 18px;
+    color: #f87c9e;
+    position: relative;
+    font-family: 'Segoe UI', lexend;
+}
+
+.doritos h3 {
+    font-size: 18px;
+    color: #f87c9e;
+    position: relative;
+    font-family: 'Segoe UI', lexend;
+}
+
+
+
+/*Picas docinhas*/
+/*Pica de two amores*/
+
+.picãosadocicados h1 {
+    font-size: 2.5rem;
+    font-family: 'Segoe UI', lexend;
+    color: #a83c59;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.twolovers-img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #f87c9e;
+    box-shadow: 0 0 10px var(--accent-glow);
+}
+
+.twoamores {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;     
+    gap: 20px;
+    background-color: #ffffff;
+    border: 5px solid #f87c9e;
+    border-radius: 20px;
+    box-shadow: 0 0 10px var(--accent-glow);
+    padding: 40px;
+    text-align: center;      
+    width: 100%;
+    max-width: 600px;
+    margin: 50px auto;
+}
+
+.twoamores:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.twoamores ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin: 10px 0;
+}
+
+.twoamores ul li {
+    font-size: 18px;
+    color: #f87c9e;
+    margin-bottom: 5px;
+    position: relative;
+    font-family: 'Segoe UI', lexend;
+}
+
+.twoamores ul li::before {
+    position: absolute;
+    left: -25px;
+}
+
+.twoamores p {
+    font-size: 18px;
+    color: #f87c9e;
+    position: relative;
+    font-family: 'Segoe UI', lexend;
+}
+
+.twoamores h3 {
+    font-size: 18px;
+    color: #f87c9e;
+    position: relative;
+    font-family: 'Segoe UI', lexend;
+}
+
+
+
+/*Pica de sensação*/
+.sensations-img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #f87c9e;
+    box-shadow: 0 0 10px var(--accent-glow);
+}
+
+.sensação {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background-color: #ffffff;
+    border: 5px solid #f87c9e;
+    border-radius: 20px;
+    box-shadow: 0 0 10px var(--accent-glow);
+    padding: 40px;
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+    margin: 50px auto;
+}
+
+.sensação:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.sensação ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin: 10px 0;
+}
+
+.sensação ul li {
+    font-size: 18px;
+    color: #f87c9e;
+    margin-bottom: 5px;
+    position: relative;
+    font-family: 'Segoe UI', lexend;
+}
+
+.sensação ul li::before {
+    position: absolute;
+    left: -25px;
+}
+
+.sensação p {
+    font-size: 18px;
+    color: #f87c9e;
+    position: relative;
+    font-family: 'Segoe UI', lexend;
+}
+
+.sensação h3 {
+    font-size: 18px;
+    color: #f87c9e;
+    position: relative;
+    font-family: 'Segoe UI', lexend;
+}
+
+
+
+/*Bebidas*/
+.prestigiosão-img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #f87c9e;
+    box-shadow: 0 0 10px var(--accent-glow);
+}
+
+.prestigiação {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background-color: #ffffff;
+    border: 5px solid #f87c9e;
+    border-radius: 20px;
+    box-shadow: 0 0 10px var(--accent-glow);
+    padding: 40px;
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+    margin: 50px auto;
+}
+
+.prestigiação:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.prestigiação ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin: 10px 0;
+}
+
+.prestigiação ul li {
+    font-size: 18px;
+    color: #f87c9e;
+    margin-bottom: 5px;
+    position: relative;
+    font-family: 'Segoe UI', lexend;
+}
+
+.prestigiação ul li::before {
+    position: absolute;
+    left: -25px;
+}
+
+.prestigiação p {
+    font-size: 18px;
+    color: #f87c9e;
+    position: relative;
+    font-family: 'Segoe UI', lexend;
+}
+
+.prestigiação h3 {
+    font-size: 18px;
+    color: #f87c9e;
+    position: relative;
+    font-family: 'Segoe UI', lexend;
+}
+
+
+
+/* Pica de prestígio */
+.tomantes h1 {
+    font-size: 2.5rem;
+    font-family: 'Segoe UI', lexend;
+    color: #a83c59;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.cock-img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #f87c9e;
+    box-shadow: 0 0 10px var(--accent-glow);
+}
+
+.tomadores {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background-color: #ffffff;
+    border: 5px solid #f87c9e;
+    border-radius: 20px;
+    box-shadow: 0 0 10px var(--accent-glow);
+    padding: 40px;
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+    margin: 50px auto;
+}
+
+.tomadores:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.tomadores ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin: 10px 0;
+}
+
+.tomadores ul li {
+    font-size: 18px;
+    color: #f87c9e;
+    margin-bottom: 5px;
+    position: relative;
+    font-family: 'Segoe UI', lexend;
+}
+
+.tomadores ul li::before {
+    position: absolute;
+    left: -25px;
+}
+
+.tomadores p {
+    font-size: 18px;
+    color: #f87c9e;
+    position: relative;
+    font-family: 'Segoe UI', lexend;
+}
+
+.tomadores h3 {
+    font-size: 18px;
+    color: #f87c9e;
+    position: relative;
+    font-family: 'Segoe UI', lexend;
+}
+
+
+
+/* Pica de promoções */
+.picãopromoções h1 {
+    font-size: 2.5rem;
+    font-family: 'Segoe UI', lexend;
+    color: #a83c59;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.promo-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background-color: #ffffff;
+    border: 5px solid #f87c9e;
+    border-radius: 20px;
+    box-shadow: 0 0 10px var(--accent-glow);
+    padding: 40px;
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+    margin: 30px auto;
+}
+
+.promo-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.promo-item img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #f87c9e;
+    box-shadow: 0 0 10px var(--accent-glow);
+}
+
+.promo-item p, .promo-item h3 {
+    font-size: 18px;
+    color: #f87c9e;
+    font-family: 'Segoe UI', lexend;
+}
+
+
+
+/*Contato*/
+.footer {
+    background-color: #f87c9e;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+    font-family: 'Segoe UI', lexend;
+    font-size: 20px;
+    margin-top: 50px; 
+}
+
+.footer-content p {
+    margin: 5px 0;
+}
+
+.fa-phone {
+    margin-right: 0.2rem;
+}
+.fa-envelope {
+    margin-right: 0.2rem;
+}
+.fa-location-dot {
+    margin-right: 0.2rem;
 }
